@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            /*The flex container becomes flexible by setting the display property to flex */
+            background-color: rgb(30, 255, 68);
+            margin: 10px;
+        }
+        
+        .flex-container>div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        
+        .flex-container2 {
+            flex-direction: column;
+            /*displays items in column. Also there are other properties like row, column-reverse, row reverse.*/
+        }
+        
+        .flex-container3 {
+            flex-wrap: wrap;
+            /*The flex-wrap property specifies whether the flex items should wrap or not when size of the screen changes. there are other properties like nowrap, row wrap, reverse-wrap etc*/
+        }
+        
+        .flex-container4 {
+            justify-content: center;
+        }
+        /*brings the itsems in the flexbox to the center horizontally. also there are other options like flex-start, flex-end, space-evenly, space-around, space-between*/
+        
+        .flex-container5 {
+            align-items: center;
+            /*brings the items in the flexbox to the center of the container vertically. also there are other options like flex-start, flex-end, baseline, stretch etc*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container flex-container1">
+        <div>Box1</div>
+        <div>Box2</div>
+        <div>Box3</div>
+    </div>
+    <div class="flex-container flex-container2">
+        <div>Box1</div>
+        <div>Box2</div>
+        <div>Box3</div>
+    </div>
+    <div class="flex-container flex-container3">
+        <div>Box1</div>
+        <div>Box2</div>
+        <div>Box3</div>
+    </div>
+    <div class="flex-container flex-container4">
+        <div>Box1</div>
+        <div>Box2</div>
+        <div>Box3</div>
+    </div>
+    <div class="flex-container flex-container5">
+        <div>Box1</div>
+        <div>Box2</div>
+        <div>Box3</div>
+    </div>
+</body>
+
+</html>

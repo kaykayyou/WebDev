@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         :root {
+            --blue: #1e90ff;
+            /*declaration of variables */
+            --green: #65ff1e;
+        }
+        
+        .main {
+            background-color: var(--blue);
+            /*usage of variable */
+        }
+        
+        h1 {
+            color: var(--green);
+        }
+        
+        h2 {
+            --blue: #060757;
+            /*overriding the variable with a local variable */
+            color: var(--blue);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Use of variables</h1>
+    <div class="main">
+        <h2>Variables</h2>
+        <p>Global Variables: declared globally and can be used anywhere</p>
+        <p>Local Variable: declared inside a block or class for its own use and cannot be used outside</p>
+    </div>
+</body>
+
+</html>

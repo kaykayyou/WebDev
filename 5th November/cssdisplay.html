@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        .one {
+            background-color: #fffb00;
+        }
+        
+        .two {
+            background-color: #15ff00;
+        }
+        
+        .three {
+            background-color: #ffae00;
+        }
+        
+        .main1>p {
+            display: inline;
+        }
+        
+        .main2 .two {
+            display: none;
+        }
+        
+        .main3 .two span {
+            background-color: #fa8e36af;
+            display: block;
+        }
+        
+        .main4 .two span {
+            background-color: #fa8e36af;
+            display: inline-block;
+        }
+        
+        .main5 .two span {
+            background-color: #fa8e36af;
+            display: list-item;
+        }
+        
+        .main6 .two span {
+            background-color: #fa8e36af;
+            display: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main1">
+        <h2>Display:Inline</h2>
+        <strong>displays the paragraphs continuously</strong>
+        <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla, autem debitis modi libero veritatis error perspiciatis et esse molestias eum quo corrupti ut, sed a recusandae explicabo repellat quas?</p>
+        <p class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nemo.</p>
+        <p class="three">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia laboriosam, ipsum reprehenderit alias fugit.</p>
+    </div>
+    <div class="main2">
+        <h2>Display:None</h2>
+        <strong>removes the entire paragraph</strong>
+        <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla, autem debitis modi libero veritatis error perspiciatis et esse molestias eum quo corrupti ut, sed a recusandae explicabo repellat quas?</p>
+        <p class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nemo.</p>
+        <p class="three">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia laboriosam, ipsum reprehenderit alias fugit.</p>
+    </div>
+    <div class="main3">
+        <h2>Display:block</h2>
+        <strong>The contents inside the span tag is display as a block</strong>
+        <p class=" one ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla, autem debitis modi libero veritatis error perspiciatis et esse molestias eum quo corrupti ut, sed a recusandae explicabo repellat quas?</p>
+        <p class="two ">Lorem ipsum dolor sit amet, <span>consectetur adipisicing elit.</span> Rerum, nemo.</p>
+        <p class="three ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia laboriosam, ipsum reprehenderit alias fugit.</p>
+    </div>
+    <div class="main4 ">
+        <h2>Display:inline-block</h2>
+        <strong>The contents inside the span tag is an inline element which is displayed as a block on the same line</strong>
+        <p class="one ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla, autem debitis modi libero veritatis error perspiciatis et esse molestias eum quo corrupti ut, sed a recusandae explicabo repellat quas?</p>
+        <p class="two ">Lorem ipsum dolor sit amet, <span>consectetur adipisicing elit.</span> Rerum, nemo.</p>
+        <p class="three ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia laboriosam, ipsum reprehenderit alias fugit.</p>
+    </div>
+    <div class="main5 ">
+        <h2>Display:list-item</h2>
+        <strong>the span tag is display as items</strong>
+        <p class="one ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla, autem debitis modi libero veritatis error perspiciatis et esse molestias eum quo corrupti ut, sed a recusandae explicabo repellat quas?</p>
+        <p class="two ">Lorem ipsum <span>dolor sit </span> amet, <span>consectetur adipisicing elit.</span> Rerum, nemo.</p>
+        <p class="three ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia laboriosam, ipsum reprehenderit alias fugit.</p>
+    </div>
+    <div class="main6 ">
+        <h2>Display:inherit</h2>
+        <strong>The parent here is paragraph tag which is a block level element,the child span tag is a inline element which inherits the parent property</strong>
+        <p class="one ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla, autem debitis modi libero veritatis error perspiciatis et esse molestias eum quo corrupti ut, sed a recusandae explicabo repellat quas?</p>
+        <p class="two ">Lorem ipsum <span>dolor sit </span> amet, <span>consectetur adipisicing elit.</span> Rerum, nemo.</p>
+        <p class="three ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia laboriosam, ipsum reprehenderit alias fugit.</p>
+    </div>
+
+</body>
+
+</html>
